@@ -1,0 +1,80 @@
+#1 - Crie uma lista com cinco itens que você compraria no supermercado. Em seguida, realize as seguintes operações:
+
+# 1. Adicione dois novos itens ao final da lista.
+# 2. Remova o primeiro item da lista.
+# 3. Remova o último item da lista.
+# 4. Adicione um novo item ao final da lista e remova o item "Café" da lista.
+
+item_supermercado = ['Arroz', 'Feijao', 'Café', 'Acucar', 'Cerveja']
+item_supermercado.append('Cebola')
+item_supermercado.append('Biscoito')
+item_supermercado.pop(0)
+item_supermercado.pop()
+item_supermercado.append('Farinha')
+item_supermercado.remove('Café')
+print(item_supermercado)
+
+#2 - Crie uma lista com cinco nomes de pessoas. Em seguida, realize as seguintes operações:
+
+#1. Adicione dois novos nomes ao final da lista.
+#2. Substitua o segundo nome da lista por "Anônimo".
+#3. Remova o primeiro nome da lista.
+#4. Remova o último nome da lista.
+
+pessoas_lista = ['Jonathan', 'Felipe', 'Paulo', 'Lucas', 'Carlos']
+pessoas_lista.append('Luiza')
+pessoas_lista.append('Marcos')
+pessoas_lista[1] = 'Anônimo'
+pessoas_lista.pop(0)
+pessoas_lista.pop()
+print(pessoas_lista)
+
+#3  - Crie uma lista com cinco números inteiros. Em seguida, realize as seguintes operações:
+
+# 1. Adicione um novo número ao final da lista.
+# 2. Remova o menor número da lista.
+# 3. Remova o último número da lista.
+# 4. Adicione um novo número ao final da lista e remova o primeiro número da lista.
+
+num_list = [-1, 2, 3, -4, 5]
+num_list.pop(0) 
+num_list.pop()
+num_list.insert(3,7)
+num_list.pop(0)
+print(num_list)
+
+#4 - Prever a saída (estilo Cisco) - Sem rodar, diga o que aparece na tela. Depois rode e confira.
+
+#CHUTE: [1,2,3] e [1,2,3,99]
+
+a = [1, 2, 3]
+b = a
+c = a[:]
+b.append(4)
+c.append(99)
+print(a)
+print(c)
+
+# [:] cria uma copia SEPARADA. Nesse caso, b = a diz que b LITERALMENTE vira a. Vira identico a A
+# Isso nao se aplica a C. C tem os mesmos valores e e a mesma lista, mas ele e algo separado de A. Por tanto, A recebe o valor add a B
+# enquanto C NAO recebe pq ele nao tem o valor de A. Seria outra lista com os mesmos valores. Tipo dois papeis. 
+# A é o original, B recebe a ação de ser igual a A, por tanto, ambos serem a mesma coisa (B = A, por tanto B é A e A é B )
+# b virou a e a virou b, enquanto c é uma copia de a sem ser atribuido as mesmas coisas a ele, enquanto qualquer coisa que
+# aplicar a B vai afetar A, enquanto qualquer coisa que acontecer em C nao vai afetar A pois é outra lista separada.
+
+#5  - Lista de convidados - Crie uma lista com 4 nomes.
+#  Peça um nome ao usuário. Se o nome estiver na lista (in), mostre "Pode entrar". 
+# Caso contrário, mostre "Você não está na lista".
+
+convidado_festa = ["mario", "carlos", "analucia", "pedro"]
+nome_convite = input("Ola, bem vindo a lista da festa! Porfavor, adicione seu nome: ")
+
+if nome_convite.lower() in convidado_festa:
+    print('Pode entrar!')
+
+elif nome_convite.lower() not in convidado_festa:
+    print('Voce nao esta na lista.')
+
+teste_proposito = ['1', '2', '3']
+print(teste_proposito)
+teste_proposito.pop(-0)

@@ -1,0 +1,102 @@
+#1 - Crie um programa que peça ao usuário 
+# para digitar a sua idade e a idade de um amigo. 
+# Verifique se as idades são iguais e, se forem, 
+# exiba a mensagem "Vocês têm a mesma idade".
+
+print('Exercicio 1')
+print()
+
+Idade_User1 = int(input('Digite a sua idade: ' ))
+Idade_User2 = int(input('Digite a idade do seu amigo: ' ))
+
+if Idade_User1 == Idade_User2:
+    print()
+    print('Suas idades sao iguais!')
+else:
+    print()
+    print('Suas idades sao diferentes!')
+
+print()
+print()
+
+#2 - Crie um programa que peça ao usuário para digitar dois números. 
+# Verifique se os números são diferentes e, se forem, 
+# exiba a mensagem "Os números são diferentes".
+
+print('Exercicio 2')
+
+User_Number01 = int(input('Digite o primeiro numero que quer usar: ' ))
+User_Number02 = int(input('Digite o segundo numero que quer usar: ' ))
+
+if User_Number01 != User_Number02: 
+    print()
+    print('Seus numeros sao diferentes!')
+else: 
+    print()
+    print('Seus numeros sao iguais!')
+
+print()
+print()
+
+#3- Crie um programa que peça ao usuário para 
+# digitar a sua altura e a altura de um amigo (em centímetros). 
+# Verifique se a altura do usuário é maior que a do amigo e, se for, 
+# exiba a mensagem "Você é mais alto que seu amigo".
+
+print('Exercicio 3')
+
+User_Height01 = float(input('Digite a sua altura: ' ))
+User_Height02 = float(input('Digite a altura do seu amigo: ' ))
+
+if User_Height01 == User_Height02:
+    print()
+    print('Voce tem a mesma altura do seu amigo!')
+if User_Height01 > User_Height02:
+    print()
+    print('Voce e mais alto que seu amigo!')  
+if User_Height01 < User_Height02:
+    print()
+    print('Voce e mais baixo que seu amigo!')
+
+print()
+print() 
+
+#4-  Crie um programa que peça ao usuário 
+# para digitar a sua nota em uma prova e a nota 
+# mínima necessária para passar. Verifique se a nota do usuário 
+# é menor que a nota mínima e, se for, 
+# exiba a mensagem "Você não passou na prova".
+
+print('Exercicio 4')
+
+Nota_Min = float(input('Digite a quantidade de nota minima: '))
+Nota_User = float(input('Porfavor digite a nota da sua prova: ' ))
+
+if Nota_User < Nota_Min:
+    print()
+    print('Voce nao passou na prova.' )
+else: 
+    print()
+    print('Voce passou na prova.')
+
+print()
+print()
+
+#5 - Crie um programa que peça ao usuário para digitar
+#  a quantidade de horas que ele estudou em uma semana 
+# e a quantidade mínima de horas recomendadas. 
+# Verifique se o usuário estudou o suficiente e, se sim,
+#  exiba a mensagem "Você estudou o suficiente nesta semana".
+
+print('Exercicio 5')
+
+User_TimeRec = float(input('Digite a quantidade de horas recomendadas: ' ))
+User_Time = float(input('Digite sua quantidade de horas estudadas: ' ))
+
+if User_Time >= User_TimeRec:
+    print()
+    print('Voce estudou o suficiente essa semana')
+else: 
+    print()
+    print('Voce nao estudou o suficiente essa semana')
+
